@@ -26,9 +26,6 @@
     "format:fix": "prettier --write '{src,__tests__/unit}/**/*.{js,ts}' && prettier --write '*.{js,ts}'",
     "build": "rm -rf lib && tsc"
   },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jewell-lgtm/mt940-js.git"

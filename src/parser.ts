@@ -12,7 +12,7 @@ import transactionReferenceNumber from './tags/transaction-reference-number';
 import {colonSymbolCode, newLineSymbolCode, returnSymbolCode} from './tokens';
 import {Readable, Transform} from 'stream';
 import {splitBySeparator} from './utils/split-by-separator';
-import {Buffer} from "buffer";
+import {Buffer} from 'buffer';
 
 const tags: Tag[] = [
     transactionReferenceNumber,
@@ -62,7 +62,7 @@ export function readChunk(data: Buffer, options: ReadOptions): Statement[] {
 
     while (state.pos < length) {
         const symbolCode: number = data[state.pos];
-        let skipReading: boolean = false;
+        let skipReading = false;
 
         // check if it's a tag
         if (symbolCode === colonSymbolCode && (state.pos === 0 || data[state.pos - 1] === newLineSymbolCode)) {
@@ -104,7 +104,6 @@ export function readChunk(data: Buffer, options: ReadOptions): Statement[] {
 
     return state.statements;
 }
-
 
 export function getData(input: ArrayBuffer | Buffer | unknown): Buffer {
     if (typeof Buffer !== 'undefined' && input instanceof Buffer) {

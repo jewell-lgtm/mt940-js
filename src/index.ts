@@ -2,6 +2,7 @@ import md5 from './utils/md5';
 import * as parser from './parser';
 import {Readable} from 'stream';
 
+const invalidInputMessage = 'invalid input';
 
 export interface Tag {
     multiline?: boolean;
@@ -99,7 +100,6 @@ const defaultOptions: Options = {
 export function readStream(input: Readable, options: Partial<Options> = {}): Readable {
     return parser.read(input, {...defaultOptions, ...options});
 }
-
 
 /**
  * Synchronously reads a buffer and returns an array of Statements

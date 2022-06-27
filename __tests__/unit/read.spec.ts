@@ -15,6 +15,7 @@ const FIXTURES = [
     ['BASE-1', 'base-1.mta'],
     ['BASE-2', 'base-2.mta'],
     ['BASE-3', 'base-3.mta'],
+    ['GLS-1', 'gls-1.mta'],
     ['PERFORMANCE', 'performance-test.mt940']
 ];
 

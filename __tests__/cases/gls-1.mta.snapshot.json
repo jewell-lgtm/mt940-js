@@ -1,0 +1,35 @@
+[
+    {
+        "accountId": "43060967/8212009200",
+        "openingBalance": {
+            "isCredit": true,
+            "date": "2022-05-11",
+            "currency": "EUR",
+            "value": 1325.97
+        },
+        "number": "0",
+        "closingBalance": {
+            "isCredit": true,
+            "date": "2022-05-11",
+            "currency": "EUR",
+            "value": 1684.52
+        },
+        "referenceNumber": "STARTUMS",
+        "transactions": [
+            {
+                "id": "6fd75a5c1dd0d330e2ad6088cfb329a7",
+                "code": "NMSC",
+                "fundsCode": "",
+                "isCredit": false,
+                "isExpense": true,
+                "currency": "EUR",
+                "description": "118?00Überweisungsauftrag?107000?20KREF+2022051159386828090200?2100001 ?22SVWZ+Auftrags-ID 1146713 TA?23N:361556 IBAN: DE6876251020?240221201668 BIC: BYLADEM1NEA?30BYLADEM1NEA?31DE68762510200221201668?32STABILO Sanitärgroßhandel G?33mbH",
+                "amount": 56.23,
+                "valueDate": "2022-05-11",
+                "entryDate": "",
+                "customerReference": "KREF+",
+                "bankReference": ""
+            }
+        ]
+    }
+]
